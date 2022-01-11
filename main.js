@@ -51,7 +51,7 @@ class Plugin extends Component {
         )
         return html`<div
                       class="bullet"
-                      style="color: ${msg.color};animation: bullet ${msg.duration}s linear;position: absolute;top: ${msg.position}%;"
+                      style="color: ${msg.color};animation: bullet ${msg.duration}s linear;position: absolute;top: ${msg.position}%; text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;"
                       dangerouslySetInnerHTML=${{ __html: fullMessage}} />`
       }
     )
